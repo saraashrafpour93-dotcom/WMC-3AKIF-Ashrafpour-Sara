@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang = "de">
+    <head>
+        <title>
+            Tierheim Musterstadt
+        </title>
+        <meta charset="UTF-8">
+        <meta name="description" content="Darstellung unseres Tierheims">
+        <meta name="keywords" content="Tierheim, entlaufene Tiere">
+        <meta name="author" content="Max Mustermann">
+    </head>
+
+    <body>
+        <ul>
+            <li><a href = "index.html">Startseite</a></li>
+            <li><a href = "beschreibung.html">Über uns</a></li>
+            <li><a href = "spenden.html">Tieren helfen</a></li>
+            <li><a href = "adoption.html">Tier adoptieren</a></li>
+            <li><a href = "kontakt.html">Kontakt</a></li>
+        </ul>
+        <h1>Kontakt</h1>
+        <form action = "form1.html" method = "post"  enctype="text/plain">
+            Ihr Vorname:
+            <input type = "text" name = "vorname" size = "10"><br><br>
+            Ihr Nachname:
+            <input type = "text" name = "nachname" size = "10"><br><br>
+            Ihre E-Mail-Adresse:
+            <input type = "text" name = "mail" size = "10"><br><br>
+            Ihre Telefonnummer:
+            <input type = "text" name = "tel" size = "10"><br><br><br>
+
+            Haben Sie selbst Tiere?<br><br>
+            <select name = "tiere">
+                <option value = "0">Nein</option>
+                <option value = "1">Ja, eines</option>
+                <option value = "2">Ja, zwei</option>
+                <option value = "3+">Ja, drei oder mehr</option>
+            </select><br><br><br>
+
+            Ich wünsche Informationen über:<br><br>
+            <input type="checkbox" value = "adoption" name = "interessen">
+            Ein Tier adoptieren<br>
+            <input type="checkbox" value = "spenden" name = "interessen">
+            Das Tierheim finanziell unterstützen<br>
+            <input type="checkbox" value = "mitarbeit" name = "interessen">
+            Ehrenamtliche Mitarbeit<br>
+            <input type="checkbox" value = "veranstaltungen" name = "interessen">
+            Informationsveranstaltungen<br>
+            <br><br><br>
+            Unser Förderverein:<br><br>
+            <input type = "radio" name = "verein" value = "mitglied" checked>
+            Ich bin bereits Mitglied
+            <input type = "radio" name = "verein" value = "mitgliedWerden">
+            Ich will gerne Mitglied werden
+            <input type = "radio" name = "geschlecht" value = "keinInteresse">
+            Kein Interesse<br><br>
+
+            Platz für weitere Kommentare:<br><br>
+            <textarea name = "kommentar" rows = "7" cols = "60" 
+            placeholder="Fügen Sie Ihren Kommentar ein!"></textarea><br><br>
+            <input type = "submit" value = "Formular abschicken">
+            <input type = "reset" value = "Werte zurücksetzen">
+        </form>
+    </body>
+</html>
