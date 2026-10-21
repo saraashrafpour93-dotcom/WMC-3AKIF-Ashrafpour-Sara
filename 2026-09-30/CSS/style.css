@@ -1,11 +1,37 @@
-/* Element-Selektor: gilt für den ganzen Body, Text-Eigenschaften werden vererbt */
+/* Element-Selektor: Schrift und Textfarbe werden vererbt */
 body {
     max-width: 900px;
     text-align: center;
     margin: 10px auto;
+    font-family: Verdana, sans-serif;
+    color: #333333;
 }
 
-/* Group-Selektor (Beistrich): gleiche Hintergrundfarbe, DRY */
+/* Element-Selektor: Überschrift */
+h1 {
+    color: darkslategray;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+
+/* Element-Selektoren: Links und Hervorhebungen */
+a {
+    color: teal;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+strong {
+    color: darkcyan;
+}
+
+/* Element-Selektor: Bilder mit runden Ecken und Rahmen */
+img {
+    border: 3px solid darkturquoise;
+    border-radius: 15px;
+}
+
+/* Group-Selektor: gleiche Hintergrundfarbe */
 .navigation,
 .main-content,
 .sidebar {
@@ -33,14 +59,18 @@ body {
     text-align: left;
     width: 600px;
     margin-right: 4px;
+    padding: 15px;
+    line-height: 1.6;
 }
 
 .sidebar {
     width: 300px;
+    padding: 15px;
 }
 
 .page-footer {
-    background-color: darkturquoise;
+    background-color: darkslategray;
+    color: white;
     height: 60px;
     align-content: center;
     margin-top: 4px;
