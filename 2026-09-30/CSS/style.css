@@ -1,0 +1,47 @@
+/* Element-Selektor: gilt für den ganzen Body, Text-Eigenschaften werden vererbt */
+body {
+    max-width: 900px;
+    text-align: center;
+    margin: 10px auto;
+}
+
+/* Group-Selektor (Beistrich): gleiche Hintergrundfarbe, DRY */
+.navigation,
+.main-content,
+.sidebar {
+    background-color: lightcyan;
+}
+
+/* Klassen-Selektoren */
+.page-header {
+    background-color: aquamarine;
+    height: 100px;
+    align-content: center;
+}
+
+.navigation {
+    margin-top: 4px;
+    padding: 15px;
+}
+
+.layout {
+    display: flex;
+    margin-top: 4px;
+}
+
+.main-content {
+    text-align: left;
+    width: 600px;
+    margin-right: 4px;
+}
+
+.sidebar {
+    width: 300px;
+}
+
+.page-footer {
+    background-color: darkturquoise;
+    height: 60px;
+    align-content: center;
+    margin-top: 4px;
+}
